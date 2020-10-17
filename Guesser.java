@@ -33,8 +33,8 @@ public Guesser(int low, int high) {
    * rules() method, next the doGuesses() method.
    */
   public void start(){
-    // call the rules method here
-    // call the doGuesses() method here
+    rules();
+    doGuesses();
   }
 
   private void rules(){
