@@ -1,4 +1,5 @@
 import java.io.Console;
+import.java.util.Scanner;
 
 /**
  * Assignment 1 - Guessing Game
@@ -55,14 +56,24 @@ public Guesser(int low, int high) {
    * a valid reply. Return the String that you read from
    * the player.
    */
-  private String getReply(){
-    String reply = null;
-    // Write code here which reads a String from the console.
-    // As long as it is not a valid reply (one of "T" and "F")
-    // write an error message, and read a new reply.
-    // When you have gotten a valid reply, return it.
-    return reply;
-  }
+  public String getReply() {
+    Scanner scan = new Scanner(System.in);
+    
+    String reply;
+    
+    while (true) {
+      System.out.println("Please answer T for true, and F for false.");
+      reply = scan.nextLine();
+      
+      if (reply.equalsIgnoreCase("T") || reply.equalsIgnoreCase("F")) {
+        break;
+      }
+      else {
+        System.out.println("Wrong input. Try again..");
+      }
+    }
+      return reply;
+    }
 
   private void doGuesses(){
     int i=0; // number of guesses
@@ -75,7 +86,7 @@ public Guesser(int low, int high) {
       System.out.println("Is the number less than or equal to " +
                          middle + "?");
       String reply = getReply();
-      if("T".equals(reply)){
+      if("T".equalsIgnoreCase(reply)){
         // The number is less than or equal to middle
         // so we move down high to middle
         high = middle;
