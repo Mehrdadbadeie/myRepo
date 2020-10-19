@@ -1,0 +1,29 @@
+G FRÅGOR:
+
+-git add lägger till filen i staging area och git commit lägger till kommentar i filen för att 
+förklara vad det är man har gjort.
+
+-git pull uppdaterar din head branch med de senaste ändringarna från remoten. Den integrerar även koden.
+
+-git status kan du se vad som ligger i stagingarean och se vad som ligger i lokala
+repositoryn. log visar vad som är commitat samt 
+kommentarerna.
+
+-Man ska va så tydlig som möjligt så att andra i teamet förstår vad det är man har gjort.
+Det är viktigt att man kommunicerar i gruppen och kommer överens om hur man skall
+kommentera commiten.
+
+
+
+
+VG FRÅGOR:
+
+git reset kan rulla tillbaka nuvarande head till ett specifikt tillstånd. Man kan återställa vissa filer 
+eller till och med hela branch. Detta är användbart om man inte pushat sina commits.
+
+Precis som git reset ångrar git revert tidigare commits. har man redan pushat commit till ett remote repository
+är det inte rekomenderat att använda sig av git reset då denna commando skriver om historiken för dina commits.
+Det är istället bättre att använda sig av git revert då den ångrar tidigare commits med ett helt ny commit
+utan att ställa om historiken av commits.
+
+
