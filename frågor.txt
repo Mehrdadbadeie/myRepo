@@ -14,8 +14,6 @@ Det är viktigt att man kommunicerar i gruppen och kommer överens om hur man sk
 kommentera commiten.
 
 
-
-
 VG FRÅGOR:
 
 git reset kan rulla tillbaka nuvarande head till ett specifikt tillstånd. Man kan återställa vissa filer 
